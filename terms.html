@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Dividendje</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root { --brand-blue: #2563EB; }
+        .bg-brand { background-color: var(--brand-blue); }
+        .text-brand { color: var(--brand-blue); }
+        .border-brand { border-color: var(--brand-blue); }
+
+        .nl { display: none; }
+        .en { display: inline; }
+
+        body.show-dutch .en { display: none; }
+        body.show-dutch .nl { display: inline; }
+        body.show-dutch h1.nl, body.show-dutch h2.nl, body.show-dutch h3.nl,
+        body.show-dutch p.nl, body.show-dutch div.nl, body.show-dutch li.nl { display: block; }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased text-gray-900">
+
+    <nav class="p-6 flex justify-between items-center max-w-4xl mx-auto">
+        <a href="index.html" class="flex items-center space-x-3 hover:opacity-80 transition">
+            <img src="AppIcon.png" alt="Logo" class="w-8 h-8 rounded-lg shadow-sm">
+            <span class="text-xl font-bold tracking-tight">Dividendje</span>
+        </a>
+        <button onclick="toggleLanguage()" class="text-xs font-medium border border-gray-300 px-3 py-1.5 rounded-full hover:bg-gray-100 transition shadow-sm">
+            <span class="nl">🇳🇱 Nederlands</span>
+            <span class="en">🇬🇧 English</span>
+        </button>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 md:py-20">
+        <div class="bg-white rounded-3xl p-8 md:p-16 shadow-sm border border-gray-100">
+
+            <header class="mb-12 text-center md:text-left">
+                <h1 class="text-4xl font-extrabold mb-4">
+                    <span class="en">Terms of Service</span>
+                    <span class="nl">Gebruiksvoorwaarden</span>
+                </h1>
+                <p class="text-gray-400 font-medium">
+                    <span class="en">Last updated: May 2, 2026</span>
+                    <span class="nl">Laatst bijgewerkt: 2 mei 2026</span>
+                </p>
+                <p class="mt-4 text-gray-600">
+                    <span class="en">By using Dividendje — including the iOS app or the dividendje.nl website — you agree to these terms.</span>
+                    <span class="nl">Door gebruik te maken van Dividendje — inclusief de iOS-app of de dividendje.nl-website — ga je akkoord met deze voorwaarden.</span>
+                </p>
+            </header>
+
+            <div class="grid gap-10">
+
+                <section class="flex gap-4">
+                    <div class="text-brand font-bold text-xl">1.</div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 en">Informational Use Only</h2>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 nl">Uitsluitend Informatief Gebruik</h2>
+                        <p class="text-gray-600">
+                            <span class="en">Dividendje is a personal portfolio tracking, dividend tracking, debt management, and tax estimation tool. It is not financial, tax, legal, or investment advice. Tax calculations are estimates based on published Dutch tax rates and should not be used as a substitute for a tax return or professional advice.</span>
+                            <span class="nl">Dividendje is een hulpmiddel voor het bijhouden van je persoonlijke portfolio, dividenden, schulden en belastingschattingen. Het is geen financieel, fiscaal, juridisch of beleggingsadvies. Belastingberekeningen zijn schattingen op basis van gepubliceerde Nederlandse belastingtarieven en mogen niet worden gebruikt als vervanging voor een belastingaangifte of professioneel advies.</span>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="flex gap-4">
+                    <div class="text-brand font-bold text-xl">2.</div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 en">No Trading Capability</h2>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 nl">Geen Handelsfunctionaliteit</h2>
+                        <p class="text-gray-600">
+                            <span class="en">Dividendje does not execute trades, withdrawals, or orders on any exchange or broker on your behalf. DEGIRO import is a read-only CSV parsing feature — it does not connect to DEGIRO's systems or APIs. The Bitvavo API integration is read-only and cannot place orders.</span>
+                            <span class="nl">Dividendje voert geen transacties, opnames of orders uit bij een beurs of broker in jouw naam. DEGIRO-import is een read-only CSV-parserfunctie — het maakt geen verbinding met de systemen of API's van DEGIRO. De Bitvavo API-integratie is read-only en kan geen orders plaatsen.</span>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="flex gap-4">
+                    <div class="text-brand font-bold text-xl">3.</div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 en">Data Accuracy</h2>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 nl">Nauwkeurigheid van Gegevens</h2>
+                        <p class="text-gray-600">
+                            <span class="en">Market prices and dividend data fetched from Yahoo Finance may contain delays, gaps, or inaccuracies. Tax rate constants are based on published Dutch fiscal year 2025 rates and may not reflect future changes. You remain responsible for verifying all values before making financial or tax decisions.</span>
+                            <span class="nl">Marktprijzen en dividenddata opgehaald via Yahoo Finance kunnen vertragingen, hiaten of onnauwkeurigheden bevatten. Belastingtarieven zijn gebaseerd op gepubliceerde Nederlandse tarieven voor belastingjaar 2025 en kunnen toekomstige wijzigingen niet weerspiegelen. Je blijft zelf verantwoordelijk voor het controleren van alle waarden voordat je financiële of fiscale beslissingen neemt.</span>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="flex gap-4">
+                    <div class="text-brand font-bold text-xl">4.</div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 en">User Responsibility</h2>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 nl">Verantwoordelijkheid Gebruiker</h2>
+                        <p class="text-gray-600">
+                            <span class="en">You are responsible for the accuracy of data you manually enter or import. You are responsible for keeping your device secure and your Bitvavo API credentials private.</span>
+                            <span class="nl">Je bent verantwoordelijk voor de juistheid van gegevens die je handmatig invoert of importeert. Je bent verantwoordelijk voor het beveiligen van je apparaat en het privé houden van je Bitvavo API-sleutels.</span>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="flex gap-4 bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                    <div class="text-brand font-bold text-xl">5.</div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 en">Limitation of Liability</h2>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 nl">Beperking van Aansprakelijkheid</h2>
+                        <p class="text-gray-600">
+                            <span class="en">The app is provided "as is" without warranties of any kind. The developer is not liable for financial losses, incorrect tax filings, investment outcomes, or data loss.</span>
+                            <span class="nl">De app wordt geleverd "zoals ze is" (as is) zonder enige garanties. De ontwikkelaar is niet aansprakelijk voor financiële verliezen, onjuiste belastingaangiften, beleggingsresultaten of gegevensverlies.</span>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="flex gap-4">
+                    <div class="text-brand font-bold text-xl">6.</div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 en">Changes to These Terms</h2>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 nl">Wijzigingen in deze Voorwaarden</h2>
+                        <p class="text-gray-600">
+                            <span class="en">These terms may be updated when significant changes are made to the app or the services it relies on. The "last updated" date at the top of this page reflects the most recent revision.</span>
+                            <span class="nl">Deze voorwaarden kunnen worden bijgewerkt wanneer er significante wijzigingen worden aangebracht in de app of de diensten waarvan zij afhankelijk is. De datum "Laatst bijgewerkt" bovenaan deze pagina geeft de meest recente versie aan.</span>
+                        </p>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <div class="mt-12 text-center">
+            <a href="index.html" class="text-brand font-semibold hover:underline decoration-2 underline-offset-4">
+                <span class="en">← Back to home</span>
+                <span class="nl">← Terug naar home</span>
+            </a>
+        </div>
+    </main>
+
+    <script>
+        function toggleLanguage() {
+            document.body.classList.toggle('show-dutch');
+            const isDutch = document.body.classList.contains('show-dutch');
+            localStorage.setItem('preferredLang', isDutch ? 'nl' : 'en');
+        }
+
+        (function() {
+            const savedLang = localStorage.getItem('preferredLang');
+            const browserLang = navigator.language || navigator.userLanguage;
+            if (savedLang === 'nl' || (!savedLang && browserLang.startsWith('nl'))) {
+                document.body.classList.add('show-dutch');
+            }
+        })();
+    </script>
+</body>
+</html>
