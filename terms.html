@@ -59,8 +59,8 @@
                         <h2 class="text-xl font-bold text-gray-900 mb-2 en">Informational Use Only</h2>
                         <h2 class="text-xl font-bold text-gray-900 mb-2 nl">Uitsluitend Informatief Gebruik</h2>
                         <p class="text-gray-600">
-                            <span class="en">Dividendje is a personal portfolio tracking, dividend tracking, debt management, and tax estimation tool. It is not financial, tax, legal, or investment advice. Tax calculations are estimates based on published Dutch tax rates and should not be used as a substitute for a tax return or professional advice.</span>
-                            <span class="nl">Dividendje is een hulpmiddel voor het bijhouden van je persoonlijke portfolio, dividenden, schulden en belastingschattingen. Het is geen financieel, fiscaal, juridisch of beleggingsadvies. Belastingberekeningen zijn schattingen op basis van gepubliceerde Nederlandse belastingtarieven en mogen niet worden gebruikt als vervanging voor een belastingaangifte of professioneel advies.</span>
+                            <span class="en">Dividendje is a personal portfolio tracking, dividend tracking, debt management, and tax estimation tool. It is not financial, tax, legal, or investment advice. Always consult a qualified financial or tax professional before making investment or tax decisions.</span>
+                            <span class="nl">Dividendje is een hulpmiddel voor het bijhouden van je persoonlijke portfolio, dividenden, schulden en belastingschattingen. Het is geen financieel, fiscaal, juridisch of beleggingsadvies. Raadpleeg altijd een gekwalificeerde financieel of fiscaal adviseur voordat je beleggings- of belastingbeslissingen neemt.</span>
                         </p>
                     </div>
                 </section>
@@ -71,20 +71,44 @@
                         <h2 class="text-xl font-bold text-gray-900 mb-2 en">No Trading Capability</h2>
                         <h2 class="text-xl font-bold text-gray-900 mb-2 nl">Geen Handelsfunctionaliteit</h2>
                         <p class="text-gray-600">
-                            <span class="en">Dividendje does not execute trades, withdrawals, or orders on any exchange or broker on your behalf. DEGIRO import is a read-only CSV parsing feature — it does not connect to DEGIRO's systems or APIs. The Bitvavo API integration is read-only and cannot place orders.</span>
-                            <span class="nl">Dividendje voert geen transacties, opnames of orders uit bij een beurs of broker in jouw naam. DEGIRO-import is een read-only CSV-parserfunctie — het maakt geen verbinding met de systemen of API's van DEGIRO. De Bitvavo API-integratie is read-only en kan geen orders plaatsen.</span>
+                            <span class="en">Dividendje does not execute trades, orders, or withdrawals on any exchange or broker on your behalf.</span>
+                            <span class="nl">Dividendje voert geen transacties, orders of opnames uit bij een beurs of broker namens jou.</span>
                         </p>
+                        <ul class="list-disc ml-5 space-y-2 mt-3 text-gray-600">
+                            <li class="en"><strong>DEGIRO:</strong> Import is read-only CSV file parsing only. The app does not connect to DEGIRO's systems, APIs, or accounts in any way.</li>
+                            <li class="nl"><strong>DEGIRO:</strong> Import is uitsluitend read-only CSV-bestandsparsering. De app maakt op geen enkele wijze verbinding met de systemen, API's of accounts van DEGIRO.</li>
+                            <li class="en"><strong>Bitvavo:</strong> The API integration is read-only (view balances and trade history only). The app cannot place orders, withdraw funds, or modify your Bitvavo account. You should create a Bitvavo API key with read-only permissions.</li>
+                            <li class="nl"><strong>Bitvavo:</strong> De API-integratie is read-only (alleen saldo's en handelsgeschiedenis bekijken). De app kan geen orders plaatsen, geld opnemen of je Bitvavo-account wijzigen. Maak een Bitvavo API-sleutel aan met uitsluitend leesrechten.</li>
+                        </ul>
                     </div>
                 </section>
 
                 <section class="flex gap-4">
                     <div class="text-brand font-bold text-xl">3.</div>
                     <div>
-                        <h2 class="text-xl font-bold text-gray-900 mb-2 en">Data Accuracy</h2>
-                        <h2 class="text-xl font-bold text-gray-900 mb-2 nl">Nauwkeurigheid van Gegevens</h2>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 en">Tax Calculations — Estimates Only</h2>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 nl">Belastingberekeningen — Uitsluitend Schattingen</h2>
+                        <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-3">
+                            <p class="text-amber-900 font-semibold mb-1 text-sm">
+                                <span class="en">Important</span>
+                                <span class="nl">Belangrijk</span>
+                            </p>
+                            <p class="text-amber-800 text-sm leading-relaxed">
+                                <span class="en">Tax calculations in Dividendje are <strong>estimates for informational purposes only</strong>. They do not constitute a tax return or professional tax advice. In particular:</span>
+                                <span class="nl">Belastingberekeningen in Dividendje zijn <strong>uitsluitend schattingen voor informatiedoeleinden</strong>. Ze vormen geen belastingaangifte of professioneel fiscaal advies. In het bijzonder:</span>
+                            </p>
+                            <ul class="list-disc ml-5 mt-2 space-y-1 text-amber-800 text-sm">
+                                <li class="en">Box 3 valuations are based on market prices from Yahoo Finance. The Belastingdienst uses official valuations (WOZ for real estate, actual balance-date values for financial assets) which may differ.</li>
+                                <li class="nl">Box 3-waarderingen zijn gebaseerd op koersen van Yahoo Finance. De Belastingdienst gebruikt officiële waarderingen (WOZ voor onroerend goed, werkelijke waarden op de peildatum voor financiële bezittingen) die kunnen afwijken.</li>
+                                <li class="en">Tax rates and thresholds are based on published Dutch fiscal year 2025 rates and may not reflect current or future legislative changes.</li>
+                                <li class="nl">Belastingtarieven en -drempels zijn gebaseerd op gepubliceerde Nederlandse tarieven voor belastingjaar 2025 en kunnen niet-actuele of toekomstige wetswijzigingen niet weerspiegelen.</li>
+                                <li class="en">Individual tax circumstances (partnerships, trusts, exemptions, treaty relief) are not modelled.</li>
+                                <li class="nl">Individuele fiscale omstandigheden (samenwerkingsverbanden, trusts, vrijstellingen, verdragsverminderingen) worden niet meegenomen.</li>
+                            </ul>
+                        </div>
                         <p class="text-gray-600">
-                            <span class="en">Market prices and dividend data fetched from Yahoo Finance may contain delays, gaps, or inaccuracies. Tax rate constants are based on published Dutch fiscal year 2025 rates and may not reflect future changes. You remain responsible for verifying all values before making financial or tax decisions.</span>
-                            <span class="nl">Marktprijzen en dividenddata opgehaald via Yahoo Finance kunnen vertragingen, hiaten of onnauwkeurigheden bevatten. Belastingtarieven zijn gebaseerd op gepubliceerde Nederlandse tarieven voor belastingjaar 2025 en kunnen toekomstige wijzigingen niet weerspiegelen. Je blijft zelf verantwoordelijk voor het controleren van alle waarden voordat je financiële of fiscale beslissingen neemt.</span>
+                            <span class="en">Always verify results with the Belastingdienst or a qualified tax adviser before filing your tax return.</span>
+                            <span class="nl">Controleer resultaten altijd bij de Belastingdienst of een gekwalificeerde belastingadviseur voordat je aangifte doet.</span>
                         </p>
                     </div>
                 </section>
@@ -92,35 +116,83 @@
                 <section class="flex gap-4">
                     <div class="text-brand font-bold text-xl">4.</div>
                     <div>
-                        <h2 class="text-xl font-bold text-gray-900 mb-2 en">User Responsibility</h2>
-                        <h2 class="text-xl font-bold text-gray-900 mb-2 nl">Verantwoordelijkheid Gebruiker</h2>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 en">Data Accuracy</h2>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 nl">Nauwkeurigheid van Gegevens</h2>
                         <p class="text-gray-600">
-                            <span class="en">You are responsible for the accuracy of data you manually enter or import. You are responsible for keeping your device secure and your Bitvavo API credentials private.</span>
-                            <span class="nl">Je bent verantwoordelijk voor de juistheid van gegevens die je handmatig invoert of importeert. Je bent verantwoordelijk voor het beveiligen van je apparaat en het privé houden van je Bitvavo API-sleutels.</span>
-                        </p>
-                    </div>
-                </section>
-
-                <section class="flex gap-4 bg-gray-50 p-6 rounded-2xl border border-gray-100">
-                    <div class="text-brand font-bold text-xl">5.</div>
-                    <div>
-                        <h2 class="text-xl font-bold text-gray-900 mb-2 en">Limitation of Liability</h2>
-                        <h2 class="text-xl font-bold text-gray-900 mb-2 nl">Beperking van Aansprakelijkheid</h2>
-                        <p class="text-gray-600">
-                            <span class="en">The app is provided "as is" without warranties of any kind. The developer is not liable for financial losses, incorrect tax filings, investment outcomes, or data loss.</span>
-                            <span class="nl">De app wordt geleverd "zoals ze is" (as is) zonder enige garanties. De ontwikkelaar is niet aansprakelijk voor financiële verliezen, onjuiste belastingaangiften, beleggingsresultaten of gegevensverlies.</span>
+                            <span class="en">Market prices and dividend data fetched from Yahoo Finance may contain delays, gaps, or inaccuracies. You remain responsible for verifying all values before making financial or tax decisions.</span>
+                            <span class="nl">Marktprijzen en dividenddata opgehaald via Yahoo Finance kunnen vertragingen, hiaten of onnauwkeurigheden bevatten. Je blijft zelf verantwoordelijk voor het controleren van alle waarden voordat je financiële of fiscale beslissingen neemt.</span>
                         </p>
                     </div>
                 </section>
 
                 <section class="flex gap-4">
+                    <div class="text-brand font-bold text-xl">5.</div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 en">User Responsibility</h2>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 nl">Verantwoordelijkheid Gebruiker</h2>
+                        <p class="text-gray-600">
+                            <span class="en">You are responsible for the accuracy of data you manually enter or import. You are responsible for keeping your device secure and your Bitvavo API credentials private. We recommend using the app only if you are 18 years of age or older, as the subject matter (portfolio investing and Dutch tax) involves adult financial responsibility.</span>
+                            <span class="nl">Je bent verantwoordelijk voor de juistheid van gegevens die je handmatig invoert of importeert. Je bent verantwoordelijk voor het beveiligen van je apparaat en het privé houden van je Bitvavo API-sleutels. We raden aan de app alleen te gebruiken als je 18 jaar of ouder bent, aangezien het onderwerp (beleggingsportefeuille en Nederlandse belastingen) volwassen financiële verantwoordelijkheid omvat.</span>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="flex gap-4 bg-gray-50 p-6 rounded-2xl border border-gray-100">
                     <div class="text-brand font-bold text-xl">6.</div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 en">Limitation of Liability</h2>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 nl">Beperking van Aansprakelijkheid</h2>
+                        <p class="text-gray-600">
+                            <span class="en">To the maximum extent permitted by Dutch law, the developer (Julian de Haas) is not liable for financial losses, incorrect tax filings, tax penalties, investment outcomes, or data loss arising from use of the app. The app is provided "as is" without warranties of any kind. Nothing in these terms excludes liability for gross negligence, intentional misconduct, or statutory consumer rights that cannot be waived under Dutch law.</span>
+                            <span class="nl">Voor zover toegestaan door Nederlands recht is de ontwikkelaar (Julian de Haas) niet aansprakelijk voor financiële verliezen, onjuiste belastingaangiften, belastingboetes, beleggingsresultaten of gegevensverlies als gevolg van het gebruik van de app. De app wordt geleverd "zoals ze is" (as is) zonder enige garanties. Niets in deze voorwaarden sluit aansprakelijkheid uit voor grove nalatigheid, opzettelijk wangedrag of wettelijke consumentenrechten die onder Nederlands recht niet kunnen worden afgestaan.</span>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="flex gap-4">
+                    <div class="text-brand font-bold text-xl">7.</div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 en">Third-Party Services</h2>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 nl">Diensten van Derden</h2>
+                        <p class="text-gray-600">
+                            <span class="en">The app uses Yahoo Finance for market data and, optionally, Bitvavo's API for crypto data. These are independent third-party services subject to their own terms and availability. Dividendje is not affiliated with Yahoo Finance, DEGIRO, or Bitvavo B.V. and does not guarantee the accuracy, completeness, or availability of their data.</span>
+                            <span class="nl">De app gebruikt Yahoo Finance voor marktdata en, optioneel, de Bitvavo API voor cryptodata. Dit zijn onafhankelijke diensten van derden met hun eigen voorwaarden en beschikbaarheid. Dividendje is niet gelieerd aan Yahoo Finance, DEGIRO of Bitvavo B.V. en garandeert niet de nauwkeurigheid, volledigheid of beschikbaarheid van hun data.</span>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="flex gap-4">
+                    <div class="text-brand font-bold text-xl">8.</div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 en">Governing Law</h2>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 nl">Toepasselijk Recht</h2>
+                        <p class="text-gray-600">
+                            <span class="en">These terms are governed by the laws of the Netherlands. Any disputes will first be addressed by contacting <a href="mailto:dehaasjulian@gmail.com" class="text-brand underline">dehaasjulian@gmail.com</a>. If unresolved, disputes are subject to the jurisdiction of the competent court in the Netherlands, without prejudice to your EU consumer rights to bring a claim in your country of residence.</span>
+                            <span class="nl">Deze voorwaarden vallen onder Nederlands recht. Eventuele geschillen worden eerst behandeld via <a href="mailto:dehaasjulian@gmail.com" class="text-brand underline">dehaasjulian@gmail.com</a>. Als er geen oplossing wordt bereikt, vallen geschillen onder de bevoegdheid van de bevoegde rechter in Nederland, onverminderd je EU-consumentenrecht om een vordering in te dienen in je woonplaats.</span>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="flex gap-4">
+                    <div class="text-brand font-bold text-xl">9.</div>
                     <div>
                         <h2 class="text-xl font-bold text-gray-900 mb-2 en">Changes to These Terms</h2>
                         <h2 class="text-xl font-bold text-gray-900 mb-2 nl">Wijzigingen in deze Voorwaarden</h2>
                         <p class="text-gray-600">
                             <span class="en">These terms may be updated when significant changes are made to the app or the services it relies on. The "last updated" date at the top of this page reflects the most recent revision.</span>
                             <span class="nl">Deze voorwaarden kunnen worden bijgewerkt wanneer er significante wijzigingen worden aangebracht in de app of de diensten waarvan zij afhankelijk is. De datum "Laatst bijgewerkt" bovenaan deze pagina geeft de meest recente versie aan.</span>
+                        </p>
+                    </div>
+                </section>
+
+                <section class="flex gap-4">
+                    <div class="text-brand font-bold text-xl">10.</div>
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 en">Contact</h2>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2 nl">Contact</h2>
+                        <p class="text-gray-600">
+                            <span class="en">Questions about these terms? Contact Julian de Haas at <a href="mailto:dehaasjulian@gmail.com" class="text-brand underline">dehaasjulian@gmail.com</a>.</span>
+                            <span class="nl">Vragen over deze voorwaarden? Neem contact op met Julian de Haas via <a href="mailto:dehaasjulian@gmail.com" class="text-brand underline">dehaasjulian@gmail.com</a>.</span>
                         </p>
                     </div>
                 </section>
