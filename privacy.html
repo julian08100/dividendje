@@ -66,6 +66,10 @@
                         <span class="en">If you use the Box 3 real estate feature, the app stores any property addresses you enter (including any coordinates used for map display) on-device only. This address data is never transmitted off your device.</span>
                         <span class="nl">Als je de Box 3-vastgoedfunctie gebruikt, slaat de app alle door jou ingevoerde adressen van onroerend goed op (inclusief eventuele coördinaten voor kaartweergave) — uitsluitend op je apparaat. Deze adresgegevens worden nooit van je apparaat verstuurd.</span>
                     </p>
+                    <p class="mt-3">
+                        <span class="en">If you import a DEGIRO transaction export (CSV file), the file is read and parsed entirely on your device. No data from the CSV is transmitted to Dividendje or any third party — it is converted into local SwiftData records and the original file is not retained by the app.</span>
+                        <span class="nl">Als je een DEGIRO-transactie-export (CSV-bestand) importeert, wordt het bestand volledig op je apparaat gelezen en verwerkt. Er worden geen gegevens uit de CSV naar Dividendje of een derde partij verstuurd — de gegevens worden omgezet naar lokale SwiftData-records en het originele bestand wordt niet bewaard door de app.</span>
+                    </p>
                 </section>
 
                 <!-- 2. PRICE DATA / YAHOO FINANCE -->
@@ -114,6 +118,20 @@
                     </p>
                 </section>
 
+                <!-- 3c. APPLE IN-APP PURCHASES -->
+                <section>
+                    <h2 class="text-xl font-bold text-gray-900 mb-3 en">3c. In-app purchases — Apple StoreKit</h2>
+                    <h2 class="text-xl font-bold text-gray-900 mb-3 nl">3c. In-app aankopen — Apple StoreKit</h2>
+                    <p>
+                        <span class="en">The app offers a <strong>Tax Guide yearly subscription</strong> (<code class="bg-gray-100 px-1 rounded text-sm">com.dividendje.taxguide.yearly</code>) via Apple's App Store. All payment processing is handled entirely by Apple — Dividendje never receives your name, payment card details, or Apple ID. Apple's own <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener" class="text-brand underline">Privacy Policy</a> governs payment transactions. Dividendje only stores a boolean flag locally on your device indicating whether the subscription is active.</span>
+                        <span class="nl">De app biedt een <strong>jaarlijks abonnement op de Belastinggids</strong> (<code class="bg-gray-100 px-1 rounded text-sm">com.dividendje.taxguide.yearly</code>) via de Apple App Store. Alle betalingsverwerking wordt volledig afgehandeld door Apple — Dividendje ontvangt nooit je naam, betaalkaartgegevens of Apple ID. Het <a href="https://www.apple.com/nl/legal/privacy/" target="_blank" rel="noopener" class="text-brand underline">privacybeleid</a> van Apple is van toepassing op betalingstransacties. Dividendje slaat uitsluitend een lokale vlag op je apparaat op die aangeeft of het abonnement actief is.</span>
+                    </p>
+                    <p class="mt-3">
+                        <span class="en">To manage or cancel your subscription, go to iPhone Settings → Apple ID → Subscriptions.</span>
+                        <span class="nl">Ga naar iPhone-instellingen → Apple ID → Abonnementen om je abonnement te beheren of op te zeggen.</span>
+                    </p>
+                </section>
+
                 <!-- 4. WHAT WE DO NOT DO -->
                 <section class="bg-blue-50 rounded-2xl p-6 border-l-4 border-brand">
                     <h2 class="text-xl font-bold text-gray-900 mb-3 en">4. What we do not do</h2>
@@ -139,8 +157,8 @@
                     <h2 class="text-xl font-bold text-gray-900 mb-3 en">5. International data transfers</h2>
                     <h2 class="text-xl font-bold text-gray-900 mb-3 nl">5. Internationale gegevensdoorgiften</h2>
                     <p>
-                        <span class="en">When the app fetches market data, your device sends requests to Yahoo Finance servers located in the United States. These requests contain only ticker symbols — no personal financial data. Yahoo Finance operates under Verizon Media's privacy framework. There is no transfer of personal data to Dividendje or any third party other than Yahoo Finance and, if connected, Bitvavo.</span>
-                        <span class="nl">Wanneer de app marktdata ophaalt, verstuurt je apparaat verzoeken naar Yahoo Finance-servers in de Verenigde Staten. Deze verzoeken bevatten uitsluitend tickersymbolen — geen persoonlijke financiële gegevens. Yahoo Finance opereert onder het privacyraamwerk van Verizon Media. Er vindt geen doorgifte van persoonsgegevens plaats naar Dividendje of een derde partij, behalve Yahoo Finance en, indien verbonden, Bitvavo.</span>
+                        <span class="en">When the app fetches market data, your device sends requests to Yahoo Finance servers located in the United States. These requests contain only ticker symbols — no personal financial data. Yahoo Finance operates under Verizon Media's privacy framework. There is no transfer of personal data to Dividendje or any third party other than Yahoo Finance and, if connected, Bitvavo. In-app purchases are processed by Apple Inc. (United States) under Apple's <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener" class="text-brand underline">Privacy Policy</a>.</span>
+                        <span class="nl">Wanneer de app marktdata ophaalt, verstuurt je apparaat verzoeken naar Yahoo Finance-servers in de Verenigde Staten. Deze verzoeken bevatten uitsluitend tickersymbolen — geen persoonlijke financiële gegevens. Yahoo Finance opereert onder het privacyraamwerk van Verizon Media. Er vindt geen doorgifte van persoonsgegevens plaats naar Dividendje of een derde partij, behalve Yahoo Finance en, indien verbonden, Bitvavo. In-app aankopen worden verwerkt door Apple Inc. (Verenigde Staten) onder het <a href="https://www.apple.com/nl/legal/privacy/" target="_blank" rel="noopener" class="text-brand underline">privacybeleid</a> van Apple.</span>
                     </p>
                 </section>
 
@@ -187,6 +205,8 @@
                         <li class="nl"><strong>Art. 6(1)(b) — overeenkomst:</strong> Het ophalen van koersen via Yahoo Finance is noodzakelijk om de door jou gevraagde portefeuillewaarden te tonen.</li>
                         <li class="en"><strong>Art. 6(1)(b) — contract:</strong> Calling Bitvavo's API with your credentials (when you connect) is necessary to import your crypto data as you have requested.</li>
                         <li class="nl"><strong>Art. 6(1)(b) — overeenkomst:</strong> Het aanroepen van de Bitvavo API met jouw sleutels (wanneer je verbindt) is noodzakelijk om je cryptodata te importeren zoals jij hebt verzocht.</li>
+                        <li class="en"><strong>Art. 6(1)(b) — contract:</strong> Verifying subscription status via Apple StoreKit is necessary to unlock Tax Guide features you have purchased.</li>
+                        <li class="nl"><strong>Art. 6(1)(b) — overeenkomst:</strong> Het verifiëren van abonnementsstatus via Apple StoreKit is noodzakelijk om de Belastinggids-functies die jij hebt gekocht te ontgrendelen.</li>
                     </ul>
                 </section>
 
