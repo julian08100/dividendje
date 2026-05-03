@@ -23,7 +23,7 @@
         .feature-card { transition: transform 0.2s, box-shadow 0.2s; }
         .feature-card:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.1); }
     </style>
-    <script src="https://t.contentsquare.net/uxa/8c97f5ee65968.js"></script>
+    <script>(function(){if(localStorage.getItem('cs-consent')=='accepted'){var s=document.createElement('script');s.async=1;s.src='https://t.contentsquare.net/uxa/8c97f5ee65968.js';document.head.appendChild(s);}})();</script>
 </head>
 <body class="bg-white font-sans antialiased">
 
@@ -391,5 +391,26 @@
             btn.replaceWith(a);
         }
     </script>
+
+<!-- Cookie consent banner -->
+<div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:99999;background:#1a1f2e;color:#fff;padding:16px 24px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;line-height:1.5;box-shadow:0 -2px 20px rgba(0,0,0,0.2);">
+  <div style="max-width:900px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:16px;">
+    <p style="flex:1;margin:0;min-width:240px;color:rgba(255,255,255,0.85);">We use analytics cookies (ContentSquare) to improve our website. No personal data is sold. <a href="privacy.html" style="color:#2B75F9;font-weight:600;">Privacy policy</a></p>
+    <div style="display:flex;gap:8px;flex-shrink:0;">
+      <button onclick="acceptCS()" style="background:#2B75F9;color:#fff;border:none;padding:10px 20px;border-radius:8px;cursor:pointer;font-weight:600;font-size:13px;">Accept</button>
+      <button onclick="declineCS()" style="background:transparent;color:rgba(255,255,255,0.7);border:1px solid rgba(255,255,255,0.25);padding:10px 20px;border-radius:8px;cursor:pointer;font-size:13px;">Decline</button>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var banner=document.getElementById('cookie-banner');
+  var c=localStorage.getItem('cs-consent');
+  if(!c) banner.style.display='block';
+  else if(c==='accepted'){var s=document.createElement('script');s.async=1;s.src='https://t.contentsquare.net/uxa/8c97f5ee65968.js';document.head.appendChild(s);}
+})();
+function acceptCS(){localStorage.setItem('cs-consent','accepted');document.getElementById('cookie-banner').style.display='none';var s=document.createElement('script');s.async=1;s.src='https://t.contentsquare.net/uxa/8c97f5ee65968.js';document.head.appendChild(s);}
+function declineCS(){localStorage.setItem('cs-consent','declined');document.getElementById('cookie-banner').style.display='none';}
+</script>
 </body>
 </html>
